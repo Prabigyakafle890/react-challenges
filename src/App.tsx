@@ -1,5 +1,5 @@
 
-
+import PwInput from './components/pw_input'
 import './index.css'
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     
+     <PwInput/>
     </>
   )
 }
