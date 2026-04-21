@@ -5,6 +5,7 @@ import GithubProfileFetcher from './components/github_profile_fetcher/GithubProf
 import { useLocalStorage } from './components/useLocalStorageHook/hooks/useLocalStorage';
 import { SearchableDropdown } from './components/SearchableDropdown';
 import { UseReducerTodo } from './components/UseReducerTodo';
+import { DragAndDropList } from './components/DragAndDropList';
 
 function App() {
  
@@ -18,6 +19,7 @@ const [LSValue, setLSValue] = useLocalStorage("ls", "");
      <input placeholder="Enter something here" onChange={(e)=> setLSValue(e.target.value) } className='border p-5'/>
      <p>{LSValue}</p>
      <UseReducerTodo />
+     <DragAndDropList/>
     </>
   )
 }
