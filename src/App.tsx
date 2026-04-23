@@ -6,6 +6,7 @@ import { useLocalStorage } from './components/useLocalStorageHook/hooks/useLocal
 import { SearchableDropdown } from './components/SearchableDropdown';
 import { UseReducerTodo } from './components/UseReducerTodo';
 import { DragAndDropList } from './components/DragAndDropList';
+import { Notes } from './components/Notes/Notes';
 
 function App() {
  
@@ -20,6 +21,7 @@ const [LSValue, setLSValue] = useLocalStorage("ls", "");
      <p>{LSValue}</p>
      <UseReducerTodo />
      <DragAndDropList/>
+     <Notes/>
     </>
   )
 }
