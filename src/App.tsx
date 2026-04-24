@@ -8,6 +8,7 @@ import { UseReducerTodo } from './components/UseReducerTodo';
 import { DragAndDropList } from './components/DragAndDropList';
 import { Notes } from './components/Notes/Notes';
 import { Users } from './components/UseFetch/Users';
+import { CommandPalette } from './components/CommandPallete';
 
 function App() {
  
@@ -23,6 +24,7 @@ const [LSValue, setLSValue] = useLocalStorage("ls", "");
      <UseReducerTodo />
      <DragAndDropList/>
      <Notes/>
+     <CommandPalette />
     
     </>
   )
