@@ -7,13 +7,14 @@ import { SearchableDropdown } from './components/SearchableDropdown';
 import { UseReducerTodo } from './components/UseReducerTodo';
 import { DragAndDropList } from './components/DragAndDropList';
 import { Notes } from './components/Notes/Notes';
+import { Users } from './components/UseFetch/Users';
 
 function App() {
  
 const [LSValue, setLSValue] = useLocalStorage("ls", "");
   return (
     <>
-
+      <Users/>
      <PwInput/>
      <GithubProfileFetcher/>
      <SearchableDropdown />
@@ -22,6 +23,7 @@ const [LSValue, setLSValue] = useLocalStorage("ls", "");
      <UseReducerTodo />
      <DragAndDropList/>
      <Notes/>
+    
     </>
   )
 }
