@@ -11,12 +11,11 @@ export const ExercisePage = () => {
 
   return (
     <div className="p-5">
-      {/* HEADER */}
+   
       <h1 className="text-2xl font-bold mb-4">
         Exercises
       </h1>
 
-      {/* BACK BUTTON */}
       {selectedId !== null && (
         <button
           onClick={() => setSelectedId(null)}
@@ -25,8 +24,6 @@ export const ExercisePage = () => {
           ← Back
         </button>
       )}
-
-      {/* LIST VIEW */}
       {selectedId === null ? (
         <div className="space-y-2">
           {exercises.map((ex) => (
@@ -45,7 +42,7 @@ export const ExercisePage = () => {
           ))}
         </div>
       ) : (
-        /* DETAIL VIEW */
+
         <div className="mt-4">
           <h2 className="text-xl font-bold mb-2">
             {selectedExercise?.name}
@@ -55,7 +52,7 @@ export const ExercisePage = () => {
             {selectedExercise?.description}
           </p>
 
-          {/* RENDER COMPONENT */}
+   
           {selectedExercise?.component === "UseLocalStorageDemo" ? (
             <UseLocalStorageDemo />
           ) : (
